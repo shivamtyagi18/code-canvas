@@ -7,9 +7,9 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
 # Import local utilities
-from parser import scan_repository
-from git_utils import get_git_metadata, get_filesystem_fallback
-from optimizer import optimize_token_budget
+from backend.parser import scan_repository
+from backend.git_utils import get_git_metadata, get_filesystem_fallback
+from backend.optimizer import optimize_token_budget
 
 app = FastAPI(title="code-canvas API", description="Backend APIs for Visual Token-Budget Context Packager")
 
